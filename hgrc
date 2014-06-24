@@ -1,0 +1,13 @@
+[extensions]
+purge=
+rebase= 
+graphlog= 
+progress=
+shelve=
+transplant=
+
+[alias]
+last = log -l 5 --style compact
+amend = commit --amend
+glog = glog -l 10 --template "{rev}:[{branch} {bookmakrs}] {author|user}: \"{desc}\"\n"
+repull = pull --rebase
